@@ -3,7 +3,8 @@ name: Deploy Jekyll Site and Landing Page
 on:
   push:
     branches:
-      - main  # or the branch you use
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,7 +17,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.6'  # Specify the Ruby version compatible with your project
+          ruby-version: '3.2.6'
 
       - name: Install Jekyll and Bundler
         run: |
@@ -39,10 +40,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Ensure the 'gh-pages' branch is used for GitHub Pages
           publish_branch: gh-pages
 
       - name: Deploy to Cloudflare Pages
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
