@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Mint skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #e8f1f2;          // Light, soft blue inspired by the card background
+$text-color: #4a4e69;                // Dark muted blue for readability and elegance
+$muted-text-color: #9a8c98;          // Muted pinkish-gray for softer text
+$primary-color: mix(#c9ada7, #f28a8d, 50%);
+$border-color: mix(#fff, #4a4e69, 75%); 
+$footer-background-color: #f28a8d;   // Dark, strong background for footer contrast
+$link-color: #d17578;
+$masthead-link-color: $text-color;   // Match the text color for masthead links
+$masthead-link-color-hover: darken($text-color, 10%); // Slightly darker on hover
+$navicon-link-color-hover: mix(#fff, $text-color, 80%); // Soft highlight on icon hover
+
+.page__footer {
+  color: #fff !important; // Override to keep footer text white on dark background
+}
+
+ul.author__urls.social-icons li {
+  white-space: normal;
+}
+ul.author__urls li a {
+  display: inline;
+}
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}

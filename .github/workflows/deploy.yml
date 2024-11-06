@@ -1,0 +1,41 @@
+name: Deploy Jekyll Site and Landing Page
+
+on:
+  push:
+    branches:
+      - main  # или другая ветка, которую вы используете
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.6'  # Укажите версию Ruby, совместимую с вашим проектом
+
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install bundler jekyll
+          cd blog
+          bundle install
+
+      - name: Build Jekyll site
+        run: |
+          cd blog
+          bundle exec jekyll build -d ../dist/blog
+
+      - name: Copy landing page to dist
+        run: |
+          mkdir -p dist
+          cp -r landing/* dist/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
