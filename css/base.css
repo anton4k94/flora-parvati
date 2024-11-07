@@ -233,7 +233,7 @@ a:focus-visible {
 }
 
 .text-large {
-	font-size: clamp(1.2rem, 4vw, 3rem);
+	font-size: clamp(1rem, 2.5vw, 3rem);
 	max-width: 900px;
 	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.2;
