@@ -1,25 +1,21 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
-	--background-color: #e8f1f2;
-	--text-color: #4a4e69;
-	--muted-text-color: #9a8c98;
-	--primary-color: #dea9a7;
-	--border-color: #c9c5c7;
-	--footer-background-color: #f28a8d;
+	--background-color: #e8f1f2; /* Light, soft blue inspired by the card background */
+	--text-color: #4a4e69; /* Dark muted blue for readability and elegance */
+	--muted-text-color: #9a8c98; /* Muted pinkish-gray for softer text */
+	--primary-color: #d09197; /* Mixed color from #c9ada7 and #f28a8d at 50% */
+	--border-color: #d9d5d9; /* Mixed color from #fff and #4a4e69 at 75% */
+	--footer-background-color: #f28a8d; /* Dark, strong background for footer contrast */
 	--link-color: #d17578;
-	--masthead-link-color: var(--text-color);
-	--masthead-link-color-hover: #3f465f;
-	--navicon-link-color-hover: #dadbdb;
+	--masthead-link-color: var(--text-color); /* Match the text color for masthead links */
+	--masthead-link-color-hover: #3f465f; /* Slightly darker on hover */
+	--navicon-link-color-hover: #dfe6e6; /* Soft highlight on icon hover */
 	--color-bg: var(--background-color);
 	--color-text: var(--text-color);
 	--color-link: var(--link-color);
 	--color-link-hover: var(--masthead-link-color-hover);
 	--color-bg-1: var(--border-color);
 	--color-bg-2: var(--muted-text-color);
-	--color-bg-3: var(--border-color);
-	--color-bg-4: var(--muted-text-color);
-	--color-bg-5: var(--border-color);
-	--color-bg-6: var(--muted-text-color);
 }
 
 *, *::after, *::before {
