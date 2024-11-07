@@ -161,7 +161,7 @@ a:focus-visible {
 	grid-area: heading;
 	align-self: center;
 	justify-self: start;
-	width: min-content;
+	width: -webkit-fill-available;
 	display: flex;
 	flex-direction: column;
 	margin-top: clamp(5vh, 10vw, 10vh);
@@ -172,7 +172,6 @@ a:focus-visible {
 	line-height: 0.93;
 	text-transform: none;
 	font-size: clamp(2.5rem, 8vw, 7rem);
-	letter-spacing: normal;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
 	color: var(--highlight-pink);
@@ -275,7 +274,7 @@ a:focus-visible {
 
 .content__title {
 	grid-area: content-title;
-	letter-spacing: -0.095em;
+	letter-spacing: normal;
 	line-height: 1;
 	font-weight: normal;
 	font-size: clamp(2rem, 6vw, 5rem);
@@ -358,7 +357,7 @@ a:focus-visible {
 		margin-top: 0;
 	}
 	.frame__heading h2 {
-			white-space: nowrap;
+			white-space: pre-line;
 	}
 	.frame__heading p {
 			margin: 0 0 0 auto;
