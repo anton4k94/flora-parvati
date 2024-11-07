@@ -484,14 +484,4 @@ a:focus-visible {
 	75% { background-position: 40% 40%; opacity: 1; background: linear-gradient(45deg, #e5b6b6, #b8e6c2); }
 	100% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
  }
- 
- /* Add dimensions for demo */
- .block {
-	/* Setting the size of the block for demonstration purposes */
-	width: 50%;
-	height: auto;
-	aspect-ratio: 4 / 3;
-	margin: 20px;
-	position: relative;
- }
- 
+
