@@ -437,9 +437,9 @@ a:focus-visible {
 	/* Gradual changes in position and opacity to simulate breathing */
 	0% { background-position: 50% 50%;  }
 	25% { background-position: 60% 60%;  }
-	50% { background-position: 50% 50%; opacity: 0.8; }
-	75% { background-position: 40% 40%; opacity: 1; }
-	100% { background-position: 50% 50%; opacity: 0.8; }
+	50% { background-position: 50% 50%;  }
+	75% { background-position: 40% 40%;  }
+	100% { background-position: 50% 50%; }
  }	
  
  /* Example 7: Pulsing Gradient Background */
@@ -468,19 +468,19 @@ a:focus-visible {
  }
  
  @keyframes breathingColorAnimation {
-	0% { background-position: 50% 50%; opacity: 0.8; }
-	25% { background-position: 60% 60%; opacity: 1; }
-	50% { background-position: 50% 50%; opacity: 0.8; }
+	0% { background-position: 50% 50%;  }
+	25% { background-position: 60% 60%;  }
+	50% { background-position: 50% 50%;  }
 	75% { background-position: 40% 40%; opacity: 1; }
 	100% { background-position: 50% 50%; opacity: 0.8; }
  }
 	25% { background-position: 60% 60%; opacity: 1; }
-	50% { background-position: 50% 50%; opacity: 0.8; }
-	75% { background-position: 40% 40%; opacity: 1; }
+	50% { background-position: 50% 50%;  }
+	75% { background-position: 40% 40%;  }
 	100% { background-position: 50% 50%; opacity: 0.8; }
  }
 	25% { background-position: 60% 60%; opacity: 1; background: linear-gradient(45deg, #e5b6b6, #b8e6c2); }
-	50% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
+	50% { background-position: 50% 50%;  background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
 	75% { background-position: 40% 40%; opacity: 1; background: linear-gradient(45deg, #e5b6b6, #b8e6c2); }
 	100% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
  }
