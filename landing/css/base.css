@@ -181,13 +181,13 @@ a:focus-visible {
 
 .frame__heading p {
 	margin: 0;
-	font-size: clamp(0.8rem, 1.5vw, 1rem);
+	font-size: clamp(1.5rem, 1.9vw, 2rem);
 	font-family: "Caveat", cursive;
 	color: var(--text-color);
 }
 
 .frame__heading a {
-	font-size: clamp(0.7rem, 1.3vw, 0.9rem);
+	font-size: clamp(1.7rem, 2vw, 3rem);
 	font-family: "Caveat", cursive;
 	text-transform: none;
 	color: var(--highlight-pink);
