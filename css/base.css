@@ -281,7 +281,7 @@ a:focus-visible {
 	font-size: clamp(2rem, 6vw, 5rem);
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
-	font-family: "Caveat", cursive;
+	font-family: "Great Vibes", cursive;
 	color: var(--highlight-pink);
 }
 
