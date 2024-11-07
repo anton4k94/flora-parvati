@@ -1,6 +1,6 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
-	--background-color: #444c49;
+	--background-color: #196f4e;
 	--text-color: #ffcccc;
 	--muted-text-color: #54776d;
 	--primary-color: #844352;
@@ -423,3 +423,143 @@ a:focus-visible {
 			width: 50%;
 	}
 }
+
+/* Example 1: Gradient with Diagonal Stripes */
+.block-gradient-stripes {
+	background: linear-gradient(135deg, #ff7e5f, #feb47b);
+	background-size: 40px 40px;
+	position: relative;
+ }
+ .block-gradient-stripes::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 10px, transparent 10px, transparent 20px);
+	z-index: 1;
+	opacity: 0.4;
+ }
+ 
+ /* Example 2: Animated Gradient Background */
+ .block-animated-gradient {
+	background: linear-gradient(45deg, #ff6b6b, #f8e71c, #32c5ff);
+	background-size: 400% 400%;
+	animation: gradientAnimation 10s ease infinite;
+ }
+ 
+ @keyframes gradientAnimation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+ }
+ 
+ /* Example 3: Wavy Gradient Background */
+ .block-wavy-gradient {
+	background: linear-gradient(90deg, #ffafbd, #ffc3a0);
+	position: relative;
+	overflow: hidden;
+ }
+ .block-wavy-gradient::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,69.3C1120,75,1280,149,1360,181.3L1440,213.3L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") repeat;
+	animation: waveAnimation 5s linear infinite;
+ }
+ 
+ @keyframes waveAnimation {
+	0% { background-position: 0 0; }
+	100% { background-position: 1000px 0; }
+ }
+ 
+ /* Example 4: Gradient with Dotted Pattern Overlay */
+ .block-dotted-gradient {
+	background: radial-gradient(circle, #6a11cb, #2575fc);
+	position: relative;
+ }
+ .block-dotted-gradient::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(#fff 15%, transparent 16%) 0 0, radial-gradient(#fff 15%, transparent 16%) 8px 8px;
+	background-size: 16px 16px;
+	opacity: 0.2;
+ } 
+ 
+ /* Example 5: Glassmorphism Effect with Gradient */
+ .block-glassmorphism {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ } 
+ 
+ /* Example 6: Breathing Gradient Background */
+ .block-breathing-gradient {
+	background: linear-gradient(45deg, #43cea2, #185a9d);
+	background-size: 200% 200%;
+	animation: breathingAnimation 6s ease-in-out infinite;
+ }
+ 
+ @keyframes breathingAnimation {
+	0% { background-position: 50% 50%; opacity: 0.8; }
+	25% { background-position: 60% 60%; opacity: 1; }
+  50% { background-position: 50% 50%; opacity: 0.8; }
+	75% { background-position: 40% 40%; opacity: 1; }
+	100% { background-position: 50% 50%; opacity: 0.8; }
+ }
+ 
+ /* Example 7: Pulsing Gradient Background */
+ .block-pulsing-gradient {
+	background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+	background-size: 200% 200%;
+	animation: pulsingAnimation 4s ease-in-out infinite;
+ }
+ 
+ @keyframes pulsingAnimation {
+	0% { background-position: 0% 50%; transform: scale(1); }
+	50% { background-position: 100% 50%; transform: scale(1.05); }
+	100% { background-position: 0% 50%; transform: scale(1); }
+ }
+ 
+ /* Example 8: Rotating Gradient Background */
+ .block-rotating-gradient {
+	background: conic-gradient(from 0deg, #ff7e5f, #feb47b, #ff6b6b, #f8e71c, #32c5ff, #ff7e5f);
+	background-size: 200% 200%;
+	animation: rotatingAnimation 8s linear infinite;
+ }
+ 
+ @keyframes rotatingAnimation {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+ }
+ 
+ /* Example 9: Blinking Gradient Background */
+ .block-blinking-gradient {
+	background: linear-gradient(120deg, #89f7fe, #66a6ff);
+	animation: blinkingAnimation 2s step-start infinite;
+ }
+ 
+ @keyframes blinkingAnimation {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
+ }
+ 
+ /* Add dimensions for demo */
+ .block {
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+	position: relative;
+ } 
+ 
+ 
