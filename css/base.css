@@ -32,6 +32,7 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-bg); 
 	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 1.5rem;
 	font-variation-settings: "slnt" 0, "wdth" 150, "wght" 500, "INKT" 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -222,6 +223,15 @@ a:focus-visible {
 	height: 100vh;
 }
 
+.content .text-meta {
+	font-family: "Caveat", cursive;
+	font-size: clamp(1rem, 3vw, 2rem);
+	max-width: 900px;
+	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
+	line-height: 1.2;
+	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
+}
+
 .text-large {
 	font-size: clamp(1.2rem, 4vw, 3rem);
 	max-width: 900px;
@@ -292,7 +302,6 @@ a:focus-visible {
 	line-height: 1.5;
 	padding: 0 clamp(0.5rem, 1.5vw, 1rem);
 	backface-visibility: hidden;
-	font-family: "Caveat", cursive;
 }
 
 .content__text--left {
@@ -360,7 +369,7 @@ a:focus-visible {
 			white-space: pre-line;
 	}
 	.frame__heading p {
-			margin: 0 0 0 auto;
+			margin: 0 26rem 0 auto;
 	}
 	.content--grid .content__title {
 			align-self: end;
