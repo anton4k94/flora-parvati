@@ -427,24 +427,7 @@ a:focus-visible {
 
 
 
-.block-breathing-gradient {
-  
-	background: linear-gradient(45deg, #ffbbbb, #87c3ff);
-	background-size: 200% 200%; 
-	
-	animation: breathingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
- }
- 
- @keyframes breathingAnimation {
-	
-	0% { background-position: 50% 50%;  }
-	25% { background-position: 60% 60%;  }
-	50% { background-position: 50% 50%; opacity: 0.95; }
-	75% { background-position: 40% 40%; opacity: 0.95; }
-	100% { background-position: 50% 50%; opacity: 0.95; }
- }
- 
- 
+
  .block-pulsing-gradient {
 	
 	background: linear-gradient(90deg, #9adcff, #fad0c4);
@@ -460,10 +443,10 @@ a:focus-visible {
 	100% { background-position: 0% 50%; transform: scale(1); }
  }
  
- 
+
  .block-breathing-color-gradient {
 	
-	background: linear-gradient(45deg, #d4d1a5, #a8d5ba);
+	background: linear-gradient(45deg, #d0aac5, #a8d5ba);
 	background-size: 200% 200%;
 	
 	animation: breathingColorAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
@@ -490,4 +473,21 @@ a:focus-visible {
 	50% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
 	75% { background-position: 40% 40%; opacity: 1; background: linear-gradient(45deg, #e5b6b6, #b8e6c2); }
 	100% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
+ }
+
+ .block-breathing-gradient {
+  
+	background: linear-gradient(45deg, #ffbbbb, #87c3ff);
+	background-size: 200% 200%; 
+	
+	animation: breathingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+ }
+ 
+ @keyframes breathingAnimation {
+	
+	0% { background-position: 50% 50%;  }
+	25% { background-position: 60% 60%;  }
+	50% { background-position: 50% 50%; opacity: 0.95; }
+	75% { background-position: 40% 40%; opacity: 0.95; }
+	100% { background-position: 50% 50%; opacity: 0.95; }
  }
