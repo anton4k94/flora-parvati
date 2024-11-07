@@ -1,6 +1,6 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
-	--background-color: #196f4e;
+	--background-color: #2d6b53;
 	--text-color: #ffcccc;
 	--muted-text-color: #54776d;
 	--primary-color: #844352;
@@ -21,6 +21,7 @@
 	--color-bg-5: var(--primary-color);
 	--color-bg-6: var(--muted-text-color);
 	--highlight-pink: #ff6cac;
+	--highlight-green: #7ce7c1;
 }
 
 *, *::after, *::before {
@@ -299,7 +300,7 @@ a:focus-visible {
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
-	color: var(--highlight-pink);
+	color: var(--highlight-green);
 }
 
 .content__text {
