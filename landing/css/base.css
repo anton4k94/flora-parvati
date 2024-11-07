@@ -1,9 +1,9 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
 	--background-color: #444c49;
-	--text-color: #3a3a3a;
+	--text-color: #d1a1a1;
 	--muted-text-color: #5e8479;
-	--primary-color: #bc6e64;
+	--primary-color: #ae6f67;
 	--border-color: #815b51;
 	--footer-background-color: #e1a7a1;
 	--link-color: #b07171;
