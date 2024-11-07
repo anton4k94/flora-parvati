@@ -1,15 +1,15 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
-	--background-color: #e8f1f2; /* Light, soft blue inspired by the card background */
-	--text-color: #4a4e69; /* Dark muted blue for readability and elegance */
-	--muted-text-color: #9a8c98; /* Muted pinkish-gray for softer text */
-	--primary-color: #d09197; /* Mixed color from #c9ada7 and #f28a8d at 50% */
-	--border-color: #d9d5d9; /* Mixed color from #fff and #4a4e69 at 75% */
-	--footer-background-color: #f28a8d; /* Dark, strong background for footer contrast */
-	--link-color: #d17578;
-	--masthead-link-color: var(--text-color); /* Match the text color for masthead links */
-	--masthead-link-color-hover: #3f465f; /* Slightly darker on hover */
-	--navicon-link-color-hover: #dfe6e6; /* Soft highlight on icon hover */
+	--background-color: #f0ebe1;
+	--text-color: #3a3a3a;
+	--muted-text-color: #a8a3a0;
+	--primary-color: #d8a7a1;
+	--border-color: #d5c7c3;
+	--footer-background-color: #e1a7a1;
+	--link-color: #b07171;
+	--masthead-link-color: var(--text-color);
+	--masthead-link-color-hover: #2f2f2f;
+	--navicon-link-color-hover: #e3e0df;
 	--color-bg: var(--background-color);
 	--color-text: var(--text-color);
 	--color-link: var(--link-color);
@@ -20,6 +20,7 @@
 	--color-bg-4: var(--muted-text-color);
 	--color-bg-5: var(--primary-color);
 	--color-bg-6: var(--muted-text-color);
+	--highlight-pink: #ff9aa2;
 }
 
 *, *::after, *::before {
@@ -86,7 +87,6 @@ a:focus-visible {
 	grid-row-gap: clamp(0.5rem, 1vw, 1rem);
 	grid-column-gap: clamp(1rem, 2vw, 2rem);
 	justify-items: start;
-	text-transform: uppercase;
 	font-size: clamp(10px, 1vw + 0.5rem, 14px);
 }
 
@@ -109,6 +109,9 @@ a:focus-visible {
 	grid-area: title;
 	font-size: inherit;
 	margin: 0;
+	font-family: "Great Vibes", cursive;
+	color: var(--highlight-pink);
+	text-transform: none;
 }
 
 .frame__back {
@@ -136,6 +139,8 @@ a:focus-visible {
 	border: 1px solid;
 	padding: clamp(0.5rem, 1.5vw, 1rem);
 	border-radius: 10px;
+	position: fixed;
+	bottom: clamp(1rem, 2rem, 2rem);
 }
 
 .frame__demos > * {
@@ -165,20 +170,27 @@ a:focus-visible {
 .frame__heading h2 {
 	margin: 0;
 	line-height: 0.9;
-	text-transform: uppercase;
+	text-transform: none;
 	margin-left: -0.065em;
 	font-size: clamp(2.5rem, 8vw, 7rem);
 	letter-spacing: -0.105em;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+	font-family: "Great Vibes", cursive;
+	color: var(--highlight-pink);
 }
 
 .frame__heading p {
 	margin: 0;
 	font-size: clamp(0.8rem, 1.5vw, 1rem);
+	font-family: "Caveat", cursive;
+	color: var(--text-color);
 }
 
 .frame__heading a {
 	font-size: clamp(0.7rem, 1.3vw, 0.9rem);
+	font-family: "Caveat", cursive;
+	text-transform: none;
+	color: var(--highlight-pink);
 }
 
 .frame__credits {
@@ -189,6 +201,18 @@ a:focus-visible {
 	display: flex;
 	gap: clamp(1rem, 2vw, 1.5rem);
 	grid-area: author;
+	align-self: center;
+}
+
+.frame #cdawrap {
+	max-width: 300px;
+	text-align: right;
+}
+
+.frame #cdawrap, 
+.frame__author,
+.frame__sub {
+	justify-self: end;
 }
 
 .content {
@@ -259,6 +283,8 @@ a:focus-visible {
 	font-size: clamp(2rem, 6vw, 5rem);
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+	font-family: "Caveat", cursive;
+	color: var(--highlight-pink);
 }
 
 .content__text {
@@ -269,6 +295,7 @@ a:focus-visible {
 	line-height: 1.5;
 	padding: 0 clamp(0.5rem, 1.5vw, 1rem);
 	backface-visibility: hidden;
+	font-family: "Caveat", cursive;
 }
 
 .content__text--left {
@@ -330,55 +357,55 @@ a:focus-visible {
 		 grid-template-areas: 'title back prev sub sponsor' 'heading heading heading heading heading' 'demos demos demos demos demos';
 	}
 	.frame__heading {
-		 margin-top: 0;
+		margin-top: 0;
 	}
 	.frame__heading h2 {
-		 white-space: nowrap;
+			white-space: nowrap;
 	}
 	.frame__heading p {
-		 margin: 0 0 0 auto;
+			margin: 0 0 0 auto;
 	}
 	.content--grid .content__title {
-		 align-self: end;
+			align-self: end;
 	}
 	.frame__demos {
-		 position: fixed;
-		 bottom: clamp(1rem, 2rem, 2rem);
+			position: fixed;
+			bottom: clamp(1rem, 2rem, 2rem);
 	}
 	.frame--footer {
-		 padding-bottom: 0;
-		 grid-template-areas: 'credits ...' '... author';
-		 grid-template-columns: 1fr 1fr;
-		 grid-template-rows: auto clamp(4rem, 6rem, 6rem);
+			padding-bottom: 0;
+			grid-template-areas: 'credits ...' '... author';
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto clamp(4rem, 6rem, 6rem);
 	}
 	.frame__author {
-		 align-self: center;
+			align-self: center;
 	}
 	.frame #cdawrap {
-		 max-width: 300px;
-		 text-align: right;
+			max-width: 300px;
+			text-align: right;
 	}
 	.frame #cdawrap, 
 	.frame__author,
 	.frame__sub {
-		 justify-self: end;
+			justify-self: end;
 	}
 	.content--grid,
 	.content--grid .content__inner {
-		 grid-template-areas: 'content-img content-title' 'content-img content-text';
-		 grid-template-columns: 30% 1fr;
-		 justify-items: start;
+			grid-template-areas: 'content-img content-title' 'content-img content-text';
+			grid-template-columns: 30% 1fr;
+			justify-items: start;
 	}
 	.content__img--large {
-		 width: clamp(100%, 160%, 160%);
+			width: clamp(100%, 160%, 160%);
 	}
 	.content__img--left {
-		 justify-self: end;
+			justify-self: end;
 	}
 	.content--card {
-		 width: 50vw;
+			width: 50vw;
 	}
 	.content--half {
-		 width: 50%;
+			width: 50%;
 	}
 }
