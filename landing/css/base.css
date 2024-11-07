@@ -14,8 +14,12 @@
 	--color-text: var(--text-color);
 	--color-link: var(--link-color);
 	--color-link-hover: var(--masthead-link-color-hover);
-	--color-bg-1: var(--border-color);
+	--color-bg-1: var(--primary-color);
 	--color-bg-2: var(--muted-text-color);
+	--color-bg-3: var(--border-color);
+	--color-bg-4: var(--muted-text-color);
+	--color-bg-5: var(--primary-color);
+	--color-bg-6: var(--muted-text-color);
 }
 
 *, *::after, *::before {
@@ -193,6 +197,7 @@ a:focus-visible {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 }
 
 .text-large {
