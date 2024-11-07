@@ -5,14 +5,24 @@
 }
 
 :root {
-	font-size: 16px;
-	--page-padding: 1.5rem;
-	--color-text: #fff;
-	--color-bg: #12100e;
-	--color-link: rgba(255,255,255,0.6);
-	--color-link-hover: #fff;
-	--color-bg-1: #2f251e;
-	--color-bg-2: #43392f;
+	font-size: clamp(14px, 1.5vw + 1rem, 18px);
+	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
+	--background-color: #e8f1f2;
+	--text-color: #4a4e69;
+	--muted-text-color: #9a8c98;
+	--primary-color: #dea9a7;
+	--border-color: #c9c5c7;
+	--footer-background-color: #f28a8d;
+	--link-color: #d17578;
+	--masthead-link-color: var(--text-color);
+	--masthead-link-color-hover: #3f465f;
+	--navicon-link-color-hover: #dadbdb;
+	--color-bg: var(--background-color);
+	--color-text: var(--text-color);
+	--color-link: var(--link-color);
+	--color-link-hover: var(--masthead-link-color-hover);
+	--color-bg-1: var(--border-color);
+	--color-bg-2: var(--muted-text-color);
 	--color-bg-3: var(--color-bg-1);
 	--color-bg-4: var(--color-bg-2);
 	--color-bg-5: var(--color-bg-1);
@@ -87,9 +97,9 @@ body {
 .js .loading::after {
 	top: 50%;
 	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
+	width: clamp(40px, 3vw + 20px, 60px);
+	height: clamp(40px, 3vw + 20px, 60px);
+	margin: calc(-30px) 0 0 calc(-30px);
 	border-radius: 50%;
 	opacity: 0.4;
 	background: var(--color-link);
@@ -156,11 +166,11 @@ a:focus-visible {
 	display: grid;
 	z-index: 1000;
 	width: 100%;
-	grid-row-gap: 1rem;
-	grid-column-gap: 2rem;
+	grid-row-gap: clamp(0.5rem, 1vw, 1rem);
+	grid-column-gap: clamp(1rem, 2vw, 2rem);
 	justify-items: start;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: clamp(10px, 1vw + 0.5rem, 14px);
 }
 
 .frame--header {
@@ -175,6 +185,7 @@ a:focus-visible {
 .frame--footer {
 	grid-template-areas: 'credits' 'author';
 	align-content: end;
+	background-color: var(--footer-background-color);
 }
 
 .frame #cdawrap {
@@ -209,17 +220,17 @@ a:focus-visible {
 	grid-area: demos;
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: clamp(0.3rem, 1vw, 0.5rem);
 	align-self: start;
 	flex-wrap: wrap;
 	background: var(--color-bg);
 	border: 1px solid;
-	padding: 1rem;
+	padding: clamp(0.5rem, 1.5vw, 1rem);
 	border-radius: 10px;
 }
 
 .frame__demos > * {
-	width: 2rem;
+	width: clamp(1.5rem, 2vw + 1rem, 2rem);
 	display: block;
 	flex: none;
 	text-decoration: none;
@@ -228,7 +239,7 @@ a:focus-visible {
 	border: 1px solid var(--color-link-hover);
 	display: grid;
 	place-items: center;
-	padding-top: 0.2em;
+	padding-top: clamp(0.1em, 1vw, 0.2em);
 	background: var(--color-bg);
 }
 
@@ -247,7 +258,7 @@ a:focus-visible {
 	width: min-content;
 	display: flex;
 	flex-direction: column;
-	margin-top: 10vh;
+	margin-top: clamp(5vh, 10vw, 10vh);
 }
 
 .frame__heading h2 {
@@ -255,17 +266,17 @@ a:focus-visible {
 	line-height: 0.9;
 	text-transform: uppercase;
 	margin-left: -0.065em;
-	font-size: clamp(2.5rem,12vw,7rem);
+	font-size: clamp(2.5rem, 8vw, 7rem);
 	letter-spacing: -0.105em;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 }
 
 .frame__heading p {
-	font-size: 1rem;
+	font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .frame__heading a {
-	font-size: 0.9rem;
+	font-size: clamp(0.7rem, 1.3vw, 0.9rem);
 }
 
 i {
@@ -283,7 +294,7 @@ i {
 
 .frame__author {
 	display: flex;
-	gap: 1.5rem;
+	gap: clamp(1rem, 2vw, 1.5rem);
 	grid-area: author;
 }
 
@@ -301,9 +312,9 @@ i {
 }
 
 .text-large {
-	font-size: clamp(1.5rem,5vw,3rem);
+	font-size: clamp(1.2rem, 4vw, 3rem);
 	max-width: 900px;
-	margin: 0 0 0.85em 0;
+	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.2;
 	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
 }
@@ -321,8 +332,8 @@ i {
 .content--grid .content__inner {
 	display: grid;
 	overflow: hidden;
-	grid-column-gap: 5vw;
-	grid-row-gap: 2vh;
+	grid-column-gap: clamp(2vw, 5vw, 5vw);
+	grid-row-gap: clamp(1vh, 2vh, 2vh);
 	align-content: center;
 	grid-template-areas: 'content-img' 'content-title' 'content-text';
 	justify-items: center;
@@ -349,13 +360,13 @@ i {
 	top: 10vh;
 	margin: auto;
 	border-radius: 14px;
-	gap: 3vh;
+	gap: clamp(2vh, 3vh, 3vh);
 	text-align: center;
 	margin-bottom: 5vh;
 }
 
 .content--card .content__title {
-	font-size: clamp(1.5rem,4vw,3.5rem);
+	font-size: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .content--card .content__title i {
@@ -365,7 +376,7 @@ i {
 .content--half {
 	display: flex;
 	flex-direction: column;
-	gap: 3vh;
+	gap: clamp(1.5vh, 3vh, 3vh);
 	text-align: center;
 }
 
@@ -375,23 +386,23 @@ i {
 
 .content__img {
 	grid-area: content-img;
-	width: 50%;
+	width: clamp(40%, 50vw, 50%);
 	max-width: 300px;
 	height: auto;
 }
 
 .content__img--large {
-	width: 60%;
+	width: clamp(50%, 60vw, 60%);
 	height: auto;
 }
 
 .content__img--small {
-	height: 35%;
+	height: clamp(25%, 35vh, 35%);
 	width: auto;
 }
 
 .spacer {
-	margin-top: 20vh;
+	margin-top: clamp(10vh, 15vw, 20vh);
 }
 
 .content__title {
@@ -400,7 +411,7 @@ i {
 	text-transform: uppercase;
 	line-height: 1;
 	font-weight: normal;
-	font-size: clamp(2rem,6vw,5rem);
+	font-size: clamp(2rem, 6vw, 5rem);
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 }
@@ -411,7 +422,7 @@ i {
 	grid-area: content-text;
 	text-align: center;
 	line-height: 1.5;
-	padding: 0 1rem;
+	padding: 0 clamp(0.5rem, 1.5vw, 1rem);
 	backface-visibility: hidden;
 }
 
@@ -420,14 +431,14 @@ i {
 }
 
 .content--intro {
-	padding-top: 25vh;
-	padding-bottom: 25vh;
+	padding-top: clamp(15vh, 25vw, 25vh);
+	padding-bottom: clamp(15vh, 25vw, 25vh);
 	z-index: 2;
 }
 
 .content--outro {
-	padding-top: 50vh;
-	padding-bottom: 30vh;
+	padding-top: clamp(30vh, 50vw, 50vh);
+	padding-bottom: clamp(20vh, 30vw, 30vh);
 }
 
 .bg-1 { background: var(--color-bg-1); }
@@ -439,7 +450,7 @@ i {
 
 @media screen and (min-width: 63em) {
 	body {
-		--page-padding: 2rem 3rem;
+		--page-padding: clamp(1rem, 2rem, 2rem) clamp(1.5rem, 3rem, 3rem);
 	}
 	.frame--header {
 		height: 100vh;
@@ -462,13 +473,13 @@ i {
 	}
 	.frame__demos {
 		position: fixed;
-		bottom: 2rem;
+		bottom: clamp(1rem, 2rem, 2rem);
 	}
 	.frame--footer {
 		padding-bottom: 0;
 		grid-template-areas: 'credits ...' '... author';
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto 6rem;
+		grid-template-rows: auto clamp(4rem, 6rem, 6rem);
 	}
 	.frame__author {
 		align-self: center;
@@ -489,7 +500,7 @@ i {
 		justify-items: start;
 	}
 	.content__img--large {
-		width: 160%;
+		width: clamp(100%, 160%, 160%);
 	}
 	.content__img--left {
 		justify-self: end;
