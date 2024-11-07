@@ -435,12 +435,12 @@ a:focus-visible {
  
  @keyframes breathingAnimation {
 	/* Gradual changes in position and opacity to simulate breathing */
-	0% { background-position: 50% 50%; opacity: 0.8; }
-	25% { background-position: 60% 60%; opacity: 1; }
+	0% { background-position: 50% 50%;  }
+	25% { background-position: 60% 60%;  }
 	50% { background-position: 50% 50%; opacity: 0.8; }
 	75% { background-position: 40% 40%; opacity: 1; }
 	100% { background-position: 50% 50%; opacity: 0.8; }
- }
+ }	
  
  /* Example 7: Pulsing Gradient Background */
  .block-pulsing-gradient {
@@ -484,4 +484,5 @@ a:focus-visible {
 	75% { background-position: 40% 40%; opacity: 1; background: linear-gradient(45deg, #e5b6b6, #b8e6c2); }
 	100% { background-position: 50% 50%; opacity: 0.8; background: linear-gradient(45deg, #d4a5a5, #a8d5ba); }
  }
+
 
