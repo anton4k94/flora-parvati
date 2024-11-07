@@ -2,9 +2,9 @@
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
 	--background-color: #f0ebe1;
 	--text-color: #3a3a3a;
-	--muted-text-color: #a8a3a0;
-	--primary-color: #d8a7a1;
-	--border-color: #d5c7c3;
+	--muted-text-color: #5e8479;
+	--primary-color: #bc6e64;
+	--border-color: #815b51;
 	--footer-background-color: #e1a7a1;
 	--link-color: #b07171;
 	--masthead-link-color: var(--text-color);
