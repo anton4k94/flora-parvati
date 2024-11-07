@@ -169,7 +169,7 @@ a:focus-visible {
 
 .frame__heading h2 {
 	margin: 0;
-	line-height: 0.9;
+	line-height: 0.93;
 	text-transform: none;
 	font-size: clamp(2.5rem, 8vw, 7rem);
 	letter-spacing: normal;
