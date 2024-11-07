@@ -233,11 +233,19 @@ a:focus-visible {
 }
 
 .text-large {
-	font-size: clamp(1rem, 2.5vw, 2.5rem);
+	font-size: clamp(1rem, 2.2vw, 2.5rem);
 	max-width: 900px;
 	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.2;
 	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
+}
+
+.text-medium {
+	font-size: clamp(1rem, 2vw, 2.5rem);
+	max-width: 900px;
+	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
+	line-height: 1.2;
+	font-variation-settings: "slnt" 10, "wdth" 100, "wght" 500, "INKT" 100;
 }
 
 .content--sticky {
@@ -369,7 +377,7 @@ a:focus-visible {
 			white-space: pre-line;
 	}
 	.frame__heading p {
-			margin: 0 26rem 0 auto;
+			margin: 0 0 0 10vw;
 	}
 	.content--grid .content__title {
 			align-self: end;
