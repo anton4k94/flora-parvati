@@ -1,7 +1,7 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
 	--background-color: #444c49;
-	--text-color: #d1a1a1;
+	--text-color: #ffcccc;
 	--muted-text-color: #5e8479;
 	--primary-color: #ae6f67;
 	--border-color: #815b51;
