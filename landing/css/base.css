@@ -256,6 +256,8 @@ a:focus-visible {
 	max-width: 80vw;
 	margin: 0 clamp(0.5rem, 2vw, 0.85em) clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.1;
+	line-break: auto;
+	hyphens: auto;
 	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
 }
 
