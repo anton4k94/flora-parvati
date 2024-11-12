@@ -252,7 +252,7 @@ a:focus-visible {
 
 .content .text-meta {
 	font-family: "Caveat", cursive;
-	font-size: clamp(2rem, 3vw, 3rem);
+	font-size: clamp(2.2rem, 2.7vw, 2.7rem);
 	max-width: 80vw;
 	margin: 0 clamp(0.5rem, 2vw, 0.85em) clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.1;
