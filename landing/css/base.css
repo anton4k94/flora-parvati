@@ -340,13 +340,17 @@ a:focus-visible {
 	text-align: center;
 	line-height: 1.5;
 	backface-visibility: hidden;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	color: var(--text-color);
 }
 
 .content__text--left {
 	text-align: left;
 	align-self: start;
+}
+
+.content__text strong {
+	color: var(--color-rose-gold);
 }
 
 .content__text a {
