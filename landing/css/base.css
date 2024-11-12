@@ -248,7 +248,6 @@ a:focus-visible {
 
 .content h1,h2{
 	margin: 0;
-	font-size: clamp(2.5rem, 8vw, 7rem);
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
 	color: var(--primary-color);
