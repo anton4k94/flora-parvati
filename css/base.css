@@ -246,12 +246,18 @@ a:focus-visible {
 	height: 100vh;
 }
 
-.content h1,h2{
+.content h1, h2{
 	margin: 0;
+
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
 	color: var(--primary-color);
 }
+.content h1 { font-size: clamp(2.5rem, 8vw, 7rem);
+}
+.content h2 { font-size: clamp(2rem, 6vw, 6rem);
+}
+
 .frame__heading .text-meta {
 	color: var(--color-dark-mint);
 }
