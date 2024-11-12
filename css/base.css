@@ -111,9 +111,7 @@ a:focus-visible {
 .frame--header {
 	height: 100%;
 	z-index: 3000;
-	background-size: auto 80%;
-	background-position: 120% 50%;
-	background-repeat: no-repeat;
+	background: no-repeat 100% 50% / auto 80%;
 	grid-template-areas: 'title' 'demos' 'heading';
 }
 
