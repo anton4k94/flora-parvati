@@ -519,32 +519,26 @@ a:focus-visible {
 	animation: pulsingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
 }
 
-/* Блок "Озеленение офиса" */
-.block-pulsing-gradient-office {
+#ozelenenie-ofisa {
 	background: linear-gradient(90deg, var(--color-bg-1), var(--color-bg-2), var(--color-bg-1));
 }
 
-/* Блок "Озеленение публичных пространств" */
-.block-pulsing-gradient-public {
+#ozelenenie-publichnyh-prostranstv {
 	background: linear-gradient(90deg, var(--color-bg-3), var(--color-bg-4), var(--color-bg-3));
 }
 
-/* Блок "Озеленение террас" */
-.block-pulsing-gradient-terrace {
+#ozelenenie-terras {
 	background: linear-gradient(90deg, var(--color-bg-1), var(--color-bg-3), var(--color-bg-1));
 }
 
-/* Блок "Экстерьерное озеленение" */
-.block-pulsing-gradient-exterior {
+#eksteriernoe-ozelenenie {
 	background: linear-gradient(90deg, var(--color-bg-2), var(--color-bg-1), var(--color-bg-2));
 }
 
-/* Блок "Интерьерное озеленение" */
-.block-pulsing-gradient-interior {
+#interiernoe-ozelenenie {
 	background: linear-gradient(90deg, var(--color-bg-5), var(--color-bg-1), var(--color-bg-5));
 }
 
-/* Блок "Композиции в кашпо" */
-.block-pulsing-gradient-planters {
+#kompozitsii-v-kashpo {
 	background: linear-gradient(90deg, var(--color-bg-4), var(--color-bg-1), var(--color-bg-4));
 }
