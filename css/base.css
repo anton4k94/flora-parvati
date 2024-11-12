@@ -1,17 +1,18 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
 
-	/* Цветовая палитра */
-	--color-rose-gold: #B76E79;       /* Розовое золото */
-	--color-peach: #FFDAB9;           /* Нежный персиковый */
-	--color-mint: #AAF0D1;            /* Мятный */
-	--color-pastel-blue: #B0E0E6;     /* Пастельный голубой */
-	--color-ivory: #FFFFF0;           /* Слоновая кость */
-	--color-lavender: #E6E6FA;        /* Пастельный лавандовый */
-	--color-dark-mint: #3CB371;       /* Тёмный мятный */
-	--color-dark-gray: #333333;       /* Тёмно-серый */
-	--color-light-gray-brown: #A9A9A9;/* Светлый серо-коричневый */
-	--color-white: #FFFFFF;           /* Белый */
+    /* Цветовая палитра */
+    --color-rose-gold: #B76E79;       /* Розовое золото */
+    --color-peach: #FFDAB9;           /* Нежный персиковый */
+    --color-mint: #AAF0D1;            /* Мятный */
+    --color-pastel-blue: #B0E0E6;     /* Пастельный голубой */
+    --color-ivory: #FFFFF0;           /* Слоновая кость */
+    --color-lavender: #E6E6FA;        /* Пастельный лавандовый */
+    --color-dark-mint: #007B5F;       /* Тёмный мятный (сделан темнее) */
+    --color-dark-blue: #2C6695;       /* Тёмно-голубой (новый цвет) */
+    --color-dark-gray: #333333;       /* Тёмно-серый */
+    --color-light-gray-brown: #A9A9A9;/* Светлый серо-коричневый */
+    --color-white: #FFFFFF;           /* Белый */
 
 	/* Общие цвета */
 	--background-color: var(--color-ivory);
@@ -364,22 +365,22 @@ a:focus-visible {
 
 #ozelenenie-ofisa .content__title,
 #ozelenenie-ofisa .content__text {
-	color: var(--color-dark-mint); /* #3CB371 */
+	color: var(--color-dark-blue); /* #3CB371 */
 }
 
 #ozelenenie-publichnyh-prostranstv .content__title,
 #ozelenenie-publichnyh-prostranstv .content__text {
-	color: var(--color-rose-gold); /* #B76E79 */
+	color: var(--color-dark-gray); /* #B76E79 */
 }
 
 #ozelenenie-terras .content__title,
 #ozelenenie-terras .content__text {
-	color: var(--color-dark-gray); /* #333333 */
+	color: var(--color-dark-mint); /* #333333 */
 }
 
 #eksteriernoe-ozelenenie .content__title,
 #eksteriernoe-ozelenenie .content__text {
-	color: var(--color-dark-mint); /* #3CB371 */
+	color: var(--color-dark-blue); /* #3CB371 */
 }
 
 #interiernoe-ozelenenie .content__title,
