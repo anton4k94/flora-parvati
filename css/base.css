@@ -1,28 +1,47 @@
 :root {
 	--page-padding: clamp(1rem, 2vw + 1rem, 2rem);
-	--background-color: #00603b;
-	--text-color: #ffcccc;
-	--muted-text-color: #54776d;
-	--primary-color: #4a4e69;
-	--border-color: #815b51;
-	--footer-background-color: #e1a7a1;
-	--link-color: #b07171;
+
+	/* Цветовая палитра */
+	--color-rose-gold: #B76E79;       /* Розовое золото */
+	--color-peach: #FFDAB9;           /* Нежный персиковый */
+	--color-mint: #AAF0D1;            /* Мятный */
+	--color-pastel-blue: #B0E0E6;     /* Пастельный голубой */
+	--color-ivory: #FFFFF0;           /* Слоновая кость */
+	--color-lavender: #E6E6FA;        /* Пастельный лавандовый */
+	--color-dark-mint: #3CB371;       /* Тёмный мятный */
+	--color-dark-gray: #333333;       /* Тёмно-серый */
+	--color-light-gray-brown: #A9A9A9;/* Светлый серо-коричневый */
+	--color-white: #FFFFFF;           /* Белый */
+
+	/* Общие цвета */
+	--background-color: var(--color-ivory);
+	--text-color: var(--color-dark-gray);
+	--muted-text-color: var(--color-light-gray-brown);
+	--primary-color: var(--color-rose-gold);
+	--border-color: var(--color-mint);
+	--footer-background-color: var(--color-rose-gold);
+	--link-color: var(--color-rose-gold);
 	--masthead-link-color: var(--text-color);
-	--masthead-link-color-hover: #2f2f2f;
-	--navicon-link-color-hover: #e3e0df;
+	--masthead-link-color-hover: var(--color-dark-mint);
+	--navicon-link-color-hover: var(--color-dark-mint);
 	--color-bg: var(--background-color);
 	--color-text: var(--text-color);
 	--color-link: var(--link-color);
 	--color-link-hover: var(--masthead-link-color-hover);
-	--color-bg-1: var(--primary-color);
-	--color-bg-2: var(--muted-text-color);
-	--color-bg-3: var(--border-color);
-	--color-bg-4: var(--muted-text-color);
-	--color-bg-5: var(--primary-color);
-	--color-bg-6: var(--muted-text-color);
-	--highlight-pink: #ff6cac;
-	--highlight-green: #7ce7c1;
+
+	/* Дополнительные цвета для градиентов */
+	--highlight-pink: var(--color-rose-gold);
+	--highlight-green: var(--color-mint);
+
+	/* Цвета фонов для блоков */
+	--color-bg-1: var(--color-mint);           /* Для блока 1 */
+	--color-bg-2: var(--color-pastel-blue);    /* Для блока 2 */
+	--color-bg-3: var(--color-lavender);       /* Для блока 3 */
+	--color-bg-4: var(--color-peach);          /* Для блока 4 */
+	--color-bg-5: var(--color-ivory);          /* Для блока 5 */
+	--color-bg-6: var(--color-peach);          /* Для блока 6 */
 }
+
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -300,7 +319,7 @@ a:focus-visible {
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
-	color: var(--highlight-green);
+	color: var(--text-color);
 }
 
 .content__text {
@@ -425,14 +444,7 @@ a:focus-visible {
 	}
 }
 
-
-/* Pulsing Gradient */
-.block-pulsing-gradient {
-	background: linear-gradient(90deg, #b2ebf2, #fff9c4, #b2ebf2);
-	background-size: 200% 200%;
-	animation: pulsingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
-}
-
+/* Анимация пульсации */
 @keyframes pulsingAnimation {
 	0% {
 		 background-position: 0% 50%;
@@ -448,50 +460,38 @@ a:focus-visible {
 	}
 }
 
-/* Breathing Gradient */
-.block-breathing-gradient {
-	background: linear-gradient(45deg, #c8e6c9, #b3e5fc);
+/* Общие стили для блоков услуг */
+.block-pulsing-gradient {
 	background-size: 200% 200%;
-	animation: breathingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+	animation: pulsingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
 }
 
-@keyframes breathingAnimation {
-	0%, 100% {
-		 background-position: 50% 50%;
-		 opacity: 0.95;
-	}
-	25% {
-		 background-position: 60% 60%;
-		 opacity: 1;
-	}
-	50% {
-		 background-position: 50% 50%;
-		 opacity: 0.8;
-	}
-	75% {
-		 background-position: 40% 40%;
-		 opacity: 1;
-	}
+/* Блок "Озеленение офиса" */
+.block-pulsing-gradient-office {
+	background: linear-gradient(90deg, var(--color-bg-1), var(--color-bg-2), var(--color-bg-1));
 }
 
-/* Breathing Color Gradient */
-.block-breathing-color-gradient {
-	background: linear-gradient(45deg, #dcedc8, #bbdefb);
-	background-size: 200% 200%;
-	animation: breathingColorAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+/* Блок "Озеленение публичных пространств" */
+.block-pulsing-gradient-public {
+	background: linear-gradient(90deg, var(--color-bg-3), var(--color-bg-4), var(--color-bg-3));
 }
 
-@keyframes breathingColorAnimation {
-	0%, 100% {
-		 background-position: 50% 50%;
-	}
-	25% {
-		 background-position: 60% 60%;
-	}
-	50% {
-		 background-position: 50% 50%;
-	}
-	75% {
-		 background-position: 40% 40%;
-	}
+/* Блок "Озеленение террас" */
+.block-pulsing-gradient-terrace {
+	background: linear-gradient(90deg, var(--color-bg-1), var(--color-bg-3), var(--color-bg-1));
+}
+
+/* Блок "Экстерьерное озеленение" */
+.block-pulsing-gradient-exterior {
+	background: linear-gradient(90deg, var(--color-bg-2), var(--color-bg-1), var(--color-bg-2));
+}
+
+/* Блок "Интерьерное озеленение" */
+.block-pulsing-gradient-interior {
+	background: linear-gradient(90deg, var(--color-bg-5), var(--color-bg-1), var(--color-bg-5));
+}
+
+/* Блок "Композиции в кашпо" */
+.block-pulsing-gradient-planters {
+	background: linear-gradient(90deg, var(--color-bg-4), var(--color-bg-1), var(--color-bg-4));
 }
