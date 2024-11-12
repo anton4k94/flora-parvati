@@ -326,7 +326,7 @@ a:focus-visible {
 	grid-area: content-title;
 	margin: 0;
 	font-family: "Great Vibes", cursive;
-	font-size: clamp(2.5rem, 6vw, 5rem);
+	font-size: clamp(2.5rem, 5vw, 5rem);
 	line-height: 1;
 	font-weight: 900;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
