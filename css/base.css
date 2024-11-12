@@ -29,10 +29,6 @@
 	--color-link: var(--link-color);
 	--color-link-hover: var(--masthead-link-color-hover);
 
-	/* Дополнительные цвета для градиентов */
-	--highlight-pink: var(--color-rose-gold);
-	--highlight-green: var(--color-mint);
-
 	/* Цвета фонов для блоков */
 	--color-bg-1: var(--color-mint);           /* Для блока 1 */
 	--color-bg-2: var(--color-pastel-blue);    /* Для блока 2 */
@@ -131,7 +127,7 @@ a:focus-visible {
 	font-size: revert;
 	margin: 0;
 	font-family: "Great Vibes", cursive;
-	color: var(--highlight-pink);
+	color: var(--color-rose-gold);
 	text-transform: none;
 }
 
@@ -195,7 +191,7 @@ a:focus-visible {
 	font-size: clamp(2.5rem, 8vw, 7rem);
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
-	color: var(--highlight-pink);
+	color: var(--color-rose-gold);
 }
 
 .frame__heading p {
@@ -209,7 +205,7 @@ a:focus-visible {
 	font-size: clamp(1.7rem, 2vw, 3rem);
 	font-family: "Caveat", cursive;
 	text-transform: none;
-	color: var(--highlight-pink);
+	color: var(--color-rose-gold);
 }
 
 .frame__credits {
@@ -319,7 +315,7 @@ a:focus-visible {
 	margin: 0;
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
 	font-family: "Great Vibes", cursive;
-	color: var(--text-color);
+	color: var(--primary-color);
 }
 
 .content__text {
