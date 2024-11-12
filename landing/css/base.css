@@ -230,7 +230,7 @@ a:focus-visible {
 }
 
 .cta-button {
-	font-size: clamp(1.7rem, 2vw, 3rem);
+	font-size: clamp(1.7rem, 3vw, 4rem);
 	font-family: "Montserrat Alternates", sans-serif;
 	text-transform: none;
 	color: var(--primary-color);
