@@ -25,7 +25,6 @@
 	--masthead-link-color: var(--text-color);
 	--masthead-link-color-hover: var(--color-dark-mint);
 	--navicon-link-color-hover: var(--color-dark-mint);
-	--color-bg: var(--background-color);
 	--color-text: var(--text-color);
 	--color-link: var(--link-color);
 	--color-link-hover: var(--masthead-link-color-hover);
@@ -151,10 +150,6 @@ a:focus-visible {
 	gap: clamp(0.3rem, 1vw, 0.5rem);
 	align-self: start;
 	flex-wrap: wrap;
-	background: var(--background-color);
-	border: 1px solid;
-	padding: clamp(0.5rem, 1.5vw, 1rem);
-	border-radius: 10px;
 	position: fixed;
 	bottom: clamp(1rem, 2rem, 2rem);
 }
@@ -166,11 +161,11 @@ a:focus-visible {
 	text-decoration: none;
 	border-radius: 50%;
 	aspect-ratio: 1;
-	border: 1px solid var(--color-link-hover);
+	border: 1px solid var(--primary-color);
 	display: grid;
 	place-items: center;
 	padding-top: clamp(0.1em, 1vw, 0.2em);
-	background: var(--color-bg);
+	background: var(--background-color);
 }
 
 .frame__heading {
@@ -416,7 +411,7 @@ a:focus-visible {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--color-bg);
+	background: var(--background-color);
 }
 
 .js .loading::after {
