@@ -327,7 +327,8 @@ a:focus-visible {
 	font-size: clamp(2.5rem, 6vw, 5rem);
 	line-height: 1;
 	font-weight: 900;
-	text-align: center;
+	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+	
 	color: var(--primary-color);
 }
 
