@@ -339,16 +339,11 @@ a:focus-visible {
 	padding: 0 clamp(0.5rem, 1.5vw, 1rem);
 	display: block;
 	text-align: justify;
-	word-break: break-all;
+	word-break: 
 	line-height: 1.5;
 	backface-visibility: hidden;
 	font-size: 0.8rem;
 	color: var(--text-color);
-}
-
-.content__text--left {
-	text-align: left;
-	align-self: start;
 }
 
 .content__text strong {
