@@ -337,7 +337,9 @@ a:focus-visible {
 	margin: 0;
 	max-width: 50vw;
 	padding: 0 clamp(0.5rem, 1.5vw, 1rem);
-	text-align: center;
+	display: block;
+	text-align: justify;
+	word-break: break-all;
 	line-height: 1.5;
 	backface-visibility: hidden;
 	font-size: 0.8rem;
@@ -350,7 +352,7 @@ a:focus-visible {
 }
 
 .content__text strong {
-	color: var(--color-rose-gold);
+	font-weight: bold;
 }
 
 .content__text a {
