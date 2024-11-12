@@ -251,7 +251,11 @@ a:focus-visible {
 	height: 100vh;
 }
 
-.text-meta {
+.frame__heading .text-meta {
+	color: var(--color-dark-mint);
+}
+
+.content .text-meta {
 	font-family: "Caveat", cursive;
 	font-size: clamp(1.7rem, 3.2vw, 2.7rem);
 	max-width: 80vw;
