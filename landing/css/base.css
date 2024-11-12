@@ -451,7 +451,7 @@ a:focus-visible {
 	}
 	.frame__demos {
 			position: fixed;
-			bottom: clamp(1rem, 2rem, 2rem);
+			bottom: clamp(1rem, 1.5rem, 2rem);
 	}
 	.frame--footer {
 			padding-bottom: 0;
