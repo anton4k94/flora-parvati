@@ -256,7 +256,7 @@ a:focus-visible {
 	font-family: "Caveat", cursive;
 	font-size: clamp(1.7rem, 3.2vw, 2.7rem);
 	max-width: 80vw;
-	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
+	margin: 0 clamp(0.5rem, 2vw, 0.85em) clamp(0.5rem, 2vw, 0.85em) 0;
 	line-height: 1.1;
 	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
 }
@@ -318,7 +318,6 @@ a:focus-visible {
 	height: clamp(25%, 35vh, 35%);
 	width: auto;
 }
-
 
 .content__title {
 	grid-area: content-title;
