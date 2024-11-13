@@ -255,9 +255,7 @@ a:focus-visible {
 }
 #about h1, #portfolio h1 { font-size: clamp(2.5rem, 8vw, 7rem);
 }
-#blog h1, #contact h1 { font-size: clamp(2rem, 5vw, 6rem);
-}
-#reviews h1 { font-size: clamp(1.5.rem, 4vw, 5rem);
+#blog h1, #contact h1, #reviews h1{ font-size: clamp(2rem, 5vw, 6rem);
 }
 
 .frame__heading .text-meta {
