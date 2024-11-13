@@ -188,8 +188,9 @@ a:focus-visible {
 	 flex-direction: column;
 	 height: 100vh; /* Set the height to 100% of the viewport height */
 	 margin-top: clamp(5vh, 10vw, 10vh);
-	 align-items: center; /* Center content vertically */
+	 align-items: start;
 	 padding-left: 5vw; /* Add padding to the left */
+	 justify-content: center; /* Center content horizontally */
 }
 
 .frame__heading h2 {
