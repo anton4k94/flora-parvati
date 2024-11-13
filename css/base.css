@@ -111,7 +111,7 @@ a:focus-visible {
 	height: 100%;
 	z-index: 3000;
 	background: no-repeat 100% 50% / auto 80%;
-	grid-template-areas: 'title' 'demos' 'heading';
+	grid-template-areas: 'blog' 'services' 'about' 'portfolio' 'rewiews' 'contact';
 }
 
 .frame--footer {
@@ -119,7 +119,7 @@ a:focus-visible {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 'credits author';
 	background-color: var(--footer-background-color);
-	grid-column-gap: 2; /* add some gap between the two elements */
+	grid-column-gap: 2;
 	padding-left: 10rem;
  }
  
