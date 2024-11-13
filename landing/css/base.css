@@ -119,7 +119,18 @@ a:focus-visible {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 'credits author';
 	background-color: var(--footer-background-color);
-}
+	grid-column-gap: 20px; /* add some gap between the two elements */
+ }
+ 
+ .frame__credits {
+	grid-area: credits;
+	justify-self: start;
+ }
+ 
+ .frame__author {
+	grid-area: author;
+	justify-self: end;
+ }
 
 .frame__title {
 	grid-area: title;
@@ -201,17 +212,6 @@ a:focus-visible {
 	font-family: "Caveat", cursive;
 	text-transform: none;
 	color: var(--color-rose-gold);
-}
-
-.frame__credits {
-	grid-area: credits;
-}
-
-.frame__author {
-	display: flex;
-	gap: clamp(1rem, 2vw, 1.5rem);
-	grid-area: author;
-	align-self: center;
 }
 
 .frame #cdawrap {
