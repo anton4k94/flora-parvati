@@ -120,6 +120,7 @@ a:focus-visible {
 	grid-template-areas: 'credits author';
 	background-color: var(--footer-background-color);
 	grid-column-gap: 20px; /* add some gap between the two elements */
+	padding-left: 10rem;
  }
  
  .frame__credits {
