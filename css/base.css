@@ -116,7 +116,9 @@ a:focus-visible {
 
 .frame--footer {
 	grid-template-areas: 'credits' 'author';
-	align-content: end;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;
 	background-color: var(--footer-background-color);
 }
 
