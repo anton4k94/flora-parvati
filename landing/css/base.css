@@ -470,7 +470,7 @@ a:focus-visible {
 			bottom: clamp(1rem, 1.5rem, 2rem);
 	}
 	.frame--footer {
-			padding-bottom: 0;
+			padding-bottom: 3vh;
 			grid-template-areas: 'credits ...' '... author';
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: auto clamp(4rem, 6rem, 6rem);
