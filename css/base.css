@@ -106,7 +106,6 @@ a:focus-visible {
 }
 
 .frame--header {
-	height: 100%;
 	z-index: 3000;
 	background: no-repeat 100% 50% / auto 80%;
 }
@@ -435,6 +434,29 @@ a:focus-visible {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@media (max-width: 768px) {
+	.frame {
+		 flex-wrap: wrap;
+		 justify-content: center;
+	}
+
+	.frame__title {
+		 flex-basis: 100%;
+		 text-align: center;
+		 margin-bottom: 1rem;
+	}
+
+	.frame__nav {
+		 flex-basis: 100%;
+		 justify-content: center;
+		 flex-wrap: wrap;
+	}
+
+	.frame__link {
+		 margin: 0.5rem;
+	}
 }
 
 @media screen and (min-width: 63em) {
