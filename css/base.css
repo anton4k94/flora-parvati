@@ -112,20 +112,22 @@ a:focus-visible {
 
 .frame__title {
 	margin: 0;
+	flex: 1;
 	font-family: "Great Vibes", cursive;
 	color: var(--primary-color);
-	text-transform: none;
+	font-size: 1.5rem;
 }
 
 .frame__nav {
 	display: flex;
-	flex: 1;
-	justify-content: space-evenly;
+	flex: 2;
+	justify-content: flex-end;
 	margin-left: 1rem;
 }
 
 .frame__link {
 	text-decoration: none;
+	padding: 0.5rem 1rem;
 	color: inherit;
 }
 
