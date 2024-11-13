@@ -181,12 +181,15 @@ a:focus-visible {
 }
 
 .frame__heading {
-	align-self: center;
-	justify-self: start;
-	width: -webkit-fill-available;
-	display: flex;
-	flex-direction: column;
-	margin-top: clamp(5vh, 10vw, 10vh);
+	 align-self: center;
+	 justify-self: start;
+	 width: -webkit-fill-available;
+	 display: flex;
+	 flex-direction: column;
+	 height: 100vh; /* Set the height to 100% of the viewport height */
+	 margin-top: clamp(5vh, 10vw, 10vh);
+	 align-items: center; /* Center content vertically */
+	 padding-left: 5vw; /* Add padding to the left */
 }
 
 .frame__heading h2 {
