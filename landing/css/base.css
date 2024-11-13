@@ -246,7 +246,7 @@ a:focus-visible {
 	height: 100vh;
 }
 
-.content h1, h2{
+.content h1 {
 	margin: 0;
 
 	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
