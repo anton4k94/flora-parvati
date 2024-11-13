@@ -101,7 +101,7 @@ a:focus-visible {
 	display: grid;
 	z-index: 1000;
 	width: 100%;
-	grid-row-gap: clamp(0.5rem, 1vw, 1rem);
+	grid-row-gap: clamp(0.5rem, 0.5vw, 1rem);
 	grid-column-gap: clamp(1rem, 2vw, 2rem);
 	justify-items: start;
 	font-size: clamp(10px, 1vw + 0.5rem, 14px);
@@ -244,6 +244,8 @@ a:focus-visible {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	padding: 22rem 3rem;
+	margin: 20vh auto;
 }
 
 .content h1 {
