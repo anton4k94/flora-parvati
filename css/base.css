@@ -142,20 +142,6 @@ a:focus-visible {
 	text-transform: none;
 }
 
-.frame__back {
-	grid-area: back;
-	justify-self: start;
-}
-
-.frame__prev {
-	grid-area: prev;
-	justify-self: start;
-}
-
-.frame__sub {
-	grid-area: sub;
-}
-
 .frame__demos {
 	grid-area: demos;
 	display: flex;
