@@ -524,7 +524,6 @@ a:focus-visible {
 	}
 }
 
-/* Анимация пульсации */
 @keyframes pulsingAnimation {
 	0% {
 		 background-position: 0% 50%;
@@ -540,7 +539,6 @@ a:focus-visible {
 	}
 }
 
-/* Общие стили для блоков услуг */
 .block-pulsing-gradient {
 	background-size: 200% 200%;
 	animation: pulsingAnimation 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
