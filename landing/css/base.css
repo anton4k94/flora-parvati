@@ -285,7 +285,7 @@ a:focus-visible {
 	font-size: clamp(1.2rem, 1.5vw, 2.5rem);
 	max-width: 80vw;
 	margin: 0 0 clamp(0.5rem, 2vw, 0.85em) 0;
-	line-height: 1.2;
+	line-height: 1.7;
 	font-variation-settings: "slnt" 10, "wdth" 100, "wght" 500, "INKT" 100;
 }
 
