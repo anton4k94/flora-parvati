@@ -90,7 +90,12 @@
                 <div class="content content--sticky content--grid block-pulsing-gradient" id="eksteriernoe-ozelenenie">
                     <img class="content__img content__img--large content__img--left" src="img/4.png" alt="Экстерьерное озеленение" />
                     <h3 class="content__title">Экстерьерное озеленение</h3>
-                    <p class="content__text  text-meta">Хотите вдохнуть новую жизнь в ваш экстерьер и превратить его в зеленое святилище?<br>Я помогу расширить ваше жизненное пространство и создать уют для вас и ваших клиентов через профессиональное экстерьерное озеленение в Москве.<br>Независимо от того, мечтаете ли вы о зеленом дизайне вестибюля отеля, привлекательной эко-френдли террасе ресторана Москвы или уютной зоне для отдыха рядом с домом в Москве, я предоставляю широкий спектр услуг по ландшафтному дизайну и озеленению в Москве и регионе.<br>Давайте вместе сделаем ваш экстерьер живым и вдохновляющим!</p>
+                    <p class="content__text  text-meta">
+                        Хотите вдохнуть новую жизнь в ваш экстерьер и превратить его в зеленое святилище?<br>
+                        Я помогу расширить ваше жизненное пространство и создать уют для вас и ваших клиентов через профессиональное экстерьерное озеленение в Москве.<br>
+                        Независимо от того, мечтаете ли вы о зеленом дизайне вестибюля отеля, привлекательной эко-френдли террасе ресторана Москвы или уютной зоне для отдыха рядом с домом в Москве, я предоставляю широкий спектр услуг по ландшафтному дизайну и озеленению в Москве и регионе.<br>
+                        Давайте вместе сделаем ваш экстерьер живым и вдохновляющим!
+                    </p>
                 </div>
             
                 <div class="content content--sticky content--grid block-pulsing-gradient" id="interiernoe-ozelenenie">
@@ -191,12 +196,33 @@
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const header = document.querySelector('.frame--header');
+                const navToggle = document.querySelector('.nav-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+
+                // Обработчик прокрутки для прозрачности
                 window.addEventListener('scroll', () => {
-                    if (window.scrollY >= window.innerHeight) {
-                        header.classList.add('scrolled');
+                    const scrollPercent = (window.scrollY / window.innerHeight) * 100;
+                    
+                    if (scrollPercent <= 50) {
+                        header.style.background = 'rgba(255, 255, 240, 0.85)';
                     } else {
-                        header.classList.remove('scrolled');
+                        const opacity = Math.max(0, 0.85 - ((scrollPercent - 50) / 50) * 0.85);
+                        header.style.background = `rgba(255, 255, 240, ${opacity})`;
                     }
+                });
+
+                // Обработчик клика по бургер-меню
+                navToggle.addEventListener('click', () => {
+                    navToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Закрытие меню при клике по ссылке
+                document.querySelectorAll('.frame__link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
                 });
             });
         </script>

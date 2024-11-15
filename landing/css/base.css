@@ -112,7 +112,7 @@ a:focus-visible {
 	z-index: 3000;
 	background: no-repeat 100% 50% / auto 80%;
 	transition: background 0.3s ease-in-out;
-	background: transparent;
+	background: rgba(255, 255, 240, 0.85); /* --color-ivory с 85% непрозрачностью */
 }
 
 .frame--header.scrolled {
