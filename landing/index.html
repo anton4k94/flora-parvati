@@ -183,5 +183,17 @@
         <script src="js/lenis.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script type="module" src="js/demo1/index.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const nav = document.querySelector('.frame__nav');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY >= window.innerHeight) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
