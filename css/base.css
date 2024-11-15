@@ -129,6 +129,12 @@ a:focus-visible {
 	flex: 2;
 	justify-content: flex-end;
 	margin-left: 1rem;
+	transition: background 0.3s ease-in-out;
+	background: transparent;
+}
+
+.frame__nav.scrolled {
+	background: linear-gradient(to bottom, var(--color-ivory) 0%, transparent 100%);
 }
 
 .frame__link {
