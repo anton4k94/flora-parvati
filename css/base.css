@@ -111,12 +111,18 @@ a:focus-visible {
 	top: 0;  /* Align it at the top */
 	z-index: 3000;
 	background: no-repeat 100% 50% / auto 80%;
+	transition: background 0.3s ease-in-out;
+	background: transparent;
+}
+
+.frame--header.scrolled {
+	background: linear-gradient(to bottom, var(--color-ivory) 0%, transparent 100%);
 }
 
 .frame__title {
 	margin: 0;
 	flex: 1;
-	font-family: "Great Vibes", cursive;
+	font-family: "Cormorant Infant", serif;
 	font-size: clamp(1rem, 2vw, 1.5rem);
 	margin: 0;
 	font-weight: 400;
@@ -129,12 +135,6 @@ a:focus-visible {
 	flex: 2;
 	justify-content: flex-end;
 	margin-left: 1rem;
-	transition: background 0.3s ease-in-out;
-	background: transparent;
-}
-
-.frame__nav.scrolled {
-	background: linear-gradient(to bottom, var(--color-ivory) 0%, transparent 100%);
 }
 
 .frame__link {
@@ -378,7 +378,7 @@ a:focus-visible {
 .content__title {
 	grid-area: content-title;
 	margin: 0;
-	font-family: "Great Vibes", cursive;
+	font-family: "Cormorant Infant", serif;
 	font-weight: 400;
 	font-size: clamp(2rem, 8vw, 3rem);
 	margin: 0;
