@@ -116,7 +116,7 @@ a:focus-visible {
 .frame__title {
 	margin: 0;
 	flex: 1;
-	font-family: "Marck Script", cursive;
+	font-family: "Great Vibes", cursive;
 	font-size: clamp(1rem, 2vw, 1.5rem);
 	margin: 0;
 	font-weight: 400;
@@ -378,7 +378,7 @@ a:focus-visible {
 .content__title {
 	grid-area: content-title;
 	margin: 0;
-	font-family: "Marck Script", cursive;
+	font-family: "Great Vibes", cursive;
 	font-weight: 400;
 	font-size: clamp(2rem, 8vw, 3rem);
 	margin: 0;
